@@ -1,0 +1,31 @@
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bracket-cta {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;;
+    transition: all .3s ease;
+}
+
+.bracket-cta:hover {
+    transform: scale(1.1);
+}
+
+.bracket-cta::before {
+    content: "[";
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.bracket-cta::after {
+    content: "]";
+    font-size: 2rem;
+    margin-left: 1rem;
+}

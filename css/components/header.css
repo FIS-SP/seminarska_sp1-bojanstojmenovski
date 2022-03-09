@@ -1,0 +1,13 @@
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
