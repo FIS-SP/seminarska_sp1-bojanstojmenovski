@@ -3,11 +3,23 @@
     position: fixed;
     z-index: 100;
     top: 0;
-    background-color: transparent;
+    background: #fff;
     display: flex;
     justify-content: center;
+    border: 1px solid #ccc;
+    transition: all .3s ease;
+}
+
+#header[data-is-transparent="true"] {
+    background: transparent;
+    border: none;
+}
+
+#header[data-is-transparent="true"] .nav-link {
+    color: #fff;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-    color: #fff;
+    color: #171717;
 }
+

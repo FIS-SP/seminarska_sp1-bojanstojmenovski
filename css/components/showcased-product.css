@@ -1,0 +1,23 @@
+.showcased-product {
+    padding: 5rem 0;
+    display: flex;
+}
+
+.showcased-product.image-right {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.showcased-product .product-image {
+    width: 50%;
+}
+
+.showcased-product .product-image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.showcased-product .product-content {
+    flex: 1;
+    padding: 3rem;
+}
