@@ -1,5 +1,6 @@
 $(document).ready(function () {
     handleHeader();
+    handleSliders();
 });
 
 function handleHeader() {
@@ -24,4 +25,14 @@ function handleTransparency(checkId, spacer) {
         $(checkId).attr("data-is-transparent", true);
         $(spacer).attr("data-is-transparent", true);
     }
+}
+
+function handleSliders() {
+    $('.gallery-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        infinite: true,
+      });
 }

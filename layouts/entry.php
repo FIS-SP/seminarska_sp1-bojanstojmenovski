@@ -11,13 +11,13 @@ $showcasedProducts = [
         'name' => 'Black Tee',
         'price' => 12,
         'description' => 'Poshlost black tee Spring Season 2021',
-        'images' => ["/files/tee.png"]
+        'images' => ["/files/products/tee.png"]
     ],
     [
         'name' => 'White Tee',
         'description' => 'Poshlost white tee Spring Season 2021',
         'price' => 12,
-        'images' => ["/files/tee2.png"]
+        'images' => ["/files/products/tee2.png"]
     ],
 ];
 
@@ -28,4 +28,17 @@ foreach ($showcasedProducts as $key=>$product) {
     </div>
 <?
 }
+
+$galleryImages = [
+    "../files/majestic.png",
+    "../files/nixar.png",
+    "../files/nixar2.png",
+    "../files/shoot1.png",
+    "../files/shoot2.png",
+    "../files/miki.png",
+];
 ?>
+
+<div class="container-fluid p-0">
+<? include "./components/gallery-slider.php" ?>
+</div>
