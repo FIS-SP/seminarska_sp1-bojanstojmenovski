@@ -1,4 +1,11 @@
 <section class="hero-video">
-    <img src="../files/entry_background.png" alt="Poshlost" class="video"> <!-- temporary for styling purposes -->
+    <div class="frame-container">
+        <iframe src="https://www.youtube.com/embed/Uv-udfmhUug?autoplay=1&mute=1&controls=0&loop=1&playlist=Uv-udfmhUug"
+                allow="autoplay"
+                width="100%"
+                height="100%"
+                frameborder="0">
+        </iframe>
+    </div>
     <a href="/" class="cta bracket-cta">Shop now</a>
 </section>

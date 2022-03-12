@@ -21,3 +21,11 @@
     flex: 1;
     padding: 3rem;
 }
+
+.showcased-product .product-name {
+    color: #171717;
+}
+
+.showcased-product .product-description {
+    color: #777;
+}
