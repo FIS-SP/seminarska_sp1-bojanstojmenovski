@@ -1,4 +1,5 @@
 <?php
+$isEntry = false;
 include "../inc/inc.header.php";
 ?>
 

@@ -6,20 +6,40 @@
     background: #fff;
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 1px solid #ccc;
     transition: all .3s ease;
 }
 
-#header[data-is-transparent="true"] {
+#header-spacer {
+    height: 58px;
+}
+
+#header-spacer.is-entry {
+    height: 0;
+}
+
+#header.is-entry[data-is-transparent="true"] {
     background: transparent;
     border: none;
 }
 
-#header[data-is-transparent="true"] .nav-link {
-    color: #fff;
+#header .logo {
+    height: 45px;
+    float: left;
+    position: absolute;
+    left: 1rem;
 }
 
-.navbar .navbar-nav .nav-item .nav-link {
+#header .logo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+#header .navbar .navbar-nav .nav-item .nav-link {
     color: #171717;
 }
 
+#header.is-entry[data-is-transparent="true"] .navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
