@@ -15,3 +15,5 @@
 
 </head>
 <body>
+
+<? include $_SERVER['DOCUMENT_ROOT'] . "/layouts/header.php";

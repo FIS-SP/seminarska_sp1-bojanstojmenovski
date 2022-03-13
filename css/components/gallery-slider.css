@@ -1,4 +1,6 @@
-.gallery-images {}
+.gallery-images {
+    margin: 5rem 0;
+}
 
 .gallery-images .gallery-slider {
     height: 30rem;
@@ -32,6 +34,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: filter .5s ease;
 }
 
 .gallery-slider .slide-wrapper img:hover {

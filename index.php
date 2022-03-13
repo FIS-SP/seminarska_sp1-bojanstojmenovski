@@ -1,6 +1,6 @@
 <?php
 include "./inc/inc.header.php";
 
-include "./inc/inc.master.php";
+include "./layouts/entry.php";
 
 include "./inc/inc.footer.php";

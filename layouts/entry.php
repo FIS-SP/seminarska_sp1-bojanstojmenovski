@@ -11,13 +11,15 @@ $showcasedProducts = [
         'name' => 'Black Tee',
         'price' => 12,
         'description' => 'Poshlost black tee Spring Season 2021',
-        'images' => ["/files/products/tee.png"]
+        'images' => ["/files/products/tee.png"],
+        'after' => "/files/random2.png"
     ],
     [
         'name' => 'White Tee',
         'description' => 'Poshlost white tee Spring Season 2021',
         'price' => 12,
-        'images' => ["/files/products/tee2.png"]
+        'images' => ["/files/products/tee2.png"],
+        'after' => "/files/random.png"
     ],
 ];
 
