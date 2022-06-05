@@ -1,0 +1,57 @@
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    transition: all .3s ease;
+
+    &.is-entry[data-is-transparent="true"] {
+        background: transparent;
+        border: none;
+
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        height: 45px;
+        float: left;
+        position: absolute;
+        left: 1rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .navbar {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: #171717;
+                }
+            }
+        }
+    }
+}
+
+#header-spacer {
+    height: 58px;
+
+    &.is-entry {
+        height: 0;
+    }
+}
