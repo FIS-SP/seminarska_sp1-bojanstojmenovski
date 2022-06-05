@@ -14,8 +14,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- My CSS -->
     <link href="../scss/index.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
 <body>
 
-<? include $_SERVER['DOCUMENT_ROOT'] . "/layouts/header.php";
+<? include __DIR__ . "/../layouts/header.php";

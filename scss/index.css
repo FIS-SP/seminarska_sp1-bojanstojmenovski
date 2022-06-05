@@ -88,6 +88,61 @@ a {
   height: 0;
 }
 
+#footer {
+  padding: 3rem 0;
+  border-top: 1px solid #ccc;
+}
+#footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+}
+#footer .footer-container .logo {
+  height: 45px;
+}
+#footer .footer-container .logo img {
+  height: 100%;
+  object-fit: contain;
+}
+#footer .footer-container .find-us {
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer-container .find-us span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#footer .footer-container .find-us .social-icons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+#footer .footer-container .find-us .social-icons .social a {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #edebeb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footer-container .find-us .social-icons .social:hover i {
+  color: #fff;
+}
+#footer .footer-container .find-us .social-icons .social i {
+  font-size: 1rem;
+}
+#footer .footer-container .find-us .social-icons .social.facebook a:hover {
+  background: #4267B2;
+}
+#footer .footer-container .find-us .social-icons .social.instagram a:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
+}
+
 .hero-video {
   height: 100vh;
   overflow: hidden;

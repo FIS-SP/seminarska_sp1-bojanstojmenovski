@@ -1,0 +1,77 @@
+#footer {
+  padding: 3rem 0;
+  border-top: 1px solid $gray300;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+
+    .logo {
+      height: 45px;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .find-us {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+
+        .social {
+          a {
+            width: 2rem;
+            height: 2rem;
+            border: 1px solid $gray200;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          &:hover {
+            i {
+              color: #fff;
+            }
+          }
+
+          i {
+            font-size: 1rem;
+          }
+
+          &.facebook {
+            a {
+              &:hover {
+                background: #4267B2;
+              }
+            }
+          }
+
+          &.instagram {
+            a {
+              &:hover {
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

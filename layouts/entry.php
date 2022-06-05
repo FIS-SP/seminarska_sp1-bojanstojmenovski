@@ -11,14 +11,18 @@ $showcasedProducts = [
         'name' => 'Black Tee',
         'price' => 12,
         'description' => 'Poshlost black tee Spring Season 2021',
-        'images' => ["/files/products/tee.png"],
+        'images' => [
+                0 => "/files/products/tee.png",
+        ],
         'after' => "/files/random2.png"
     ],
     [
         'name' => 'White Tee',
         'description' => 'Poshlost white tee Spring Season 2021',
         'price' => 12,
-        'images' => ["/files/products/tee2.png"],
+        'images' => [
+                0 => "/files/products/tee2.png"
+        ],
         'after' => "/files/random.png"
     ],
 ];
@@ -30,15 +34,6 @@ foreach ($showcasedProducts as $key=>$product) {
     </div>
 <?
 }
-
-$galleryImages = [
-    "../files/majestic.png",
-    "../files/nixar.png",
-    "../files/nixar2.png",
-    "../files/shoot1.png",
-    "../files/shoot2.png",
-    "../files/miki.png",
-];
 ?>
 
 <div class="container-fluid p-0">
