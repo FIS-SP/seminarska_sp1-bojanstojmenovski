@@ -1,5 +1,8 @@
+@import "general/mixins";
+@import "general/variables";
 @import "general/general";
 
 @import "components/header";
+@import "components/hero-video";
 @import "components/gallery-slider";
 @import "components/showcased-product";

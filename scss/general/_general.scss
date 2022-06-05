@@ -30,3 +30,23 @@ a {
         margin-left: 1rem;
     }
 }
+
+.btn {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+.btn-primary {
+    color: $white;
+    background: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+        background: $white;
+        color: $primary-color;
+        border-color: $primary-color;
+    }
+}
