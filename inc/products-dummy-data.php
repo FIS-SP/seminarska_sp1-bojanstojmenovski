@@ -5,7 +5,8 @@ $products = [
         'description' => "Oversized Sweatshirt 'Orthadox' prints - Fall/Winter Season 2022",
         'price' => 20,
         'images' => [
-            0 => "/files/products/ishs-nika.png",
+            0 => "/files/products/ishs-nika-1.jpg",
+            1 => "/files/products/ishs-nika-2.jpg",
         ],
         'after' => ""
     ],
@@ -14,7 +15,7 @@ $products = [
         'price' => 12,
         'description' => 'Poshlost black tee Spring Season 2021',
         'images' => [
-            0 => "/files/products/tee.png",
+            0 => "/files/products/black-t.jpg",
         ],
         'after' => "/files/random2.png"
     ],
@@ -105,7 +106,7 @@ $products = [
         'description' => 'Black wool beanie - Winter Season 2021',
         'price' => 5,
         'images' => [
-            0 => "/files/products/beanie.png",
+            0 => "/files/products/beanie.jpg",
         ],
         'after' => ""
     ],

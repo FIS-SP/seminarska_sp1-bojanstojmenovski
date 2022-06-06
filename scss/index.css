@@ -143,6 +143,14 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
 }
 
+.store-layout {
+  padding: 3rem 0;
+}
+.store-layout .store-products-container .store-products-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hero-video {
   height: 100vh;
   overflow: hidden;
@@ -240,7 +248,7 @@ a {
   background: #fff;
   position: relative;
   z-index: 2;
-  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 10px 20px rgba(11, 13, 44, 0.1);
 }
 .showcased-product .product-image .image-wrapper img {
   width: 100%;
@@ -288,6 +296,77 @@ a {
 }
 .showcased-product.image-right .product-content .product-tools {
   flex-direction: row-reverse;
+}
+
+.product-card {
+  width: 33%;
+  border-radius: 0.5rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.product-card:hover {
+  z-index: 10;
+}
+.product-card:hover .product-card__additional {
+  display: block;
+}
+.product-card .product-card__initial {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.product-card .product-card__initial:hover {
+  box-shadow: 0 10px 20px rgba(11, 13, 44, 0.1);
+}
+.product-card .product-card__initial .product-image {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.product-card .product-card__initial .product-image img {
+  width: 100%;
+  object-fit: contain;
+}
+.product-card .product-card__initial .product-title {
+  font-size: 1rem;
+  color: #777;
+}
+.product-card .product-card__initial .product-price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #171717;
+}
+.product-card .product-card__additional {
+  position: relative;
+  width: 100%;
+  display: none;
+}
+.product-card .product-card__additional form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 1rem;
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 10px 20px rgba(11, 13, 44, 0.1);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.product-card .product-card__additional button.add-to-cart {
+  background: #171717;
+  padding: 0.5rem;
+  color: #fff;
+  border: 1px solid #171717;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.product-card .product-card__additional button.add-to-cart:hover {
+  background: transparent;
+  color: #171717;
 }
 
 /*# sourceMappingURL=index.css.map */

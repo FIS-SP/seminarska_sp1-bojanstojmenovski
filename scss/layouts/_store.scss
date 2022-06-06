@@ -1,0 +1,10 @@
+.store-layout {
+  padding: 3rem 0;
+
+  .store-products-container {
+    .store-products-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
