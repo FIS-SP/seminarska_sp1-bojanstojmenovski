@@ -25,7 +25,7 @@ $position = $key % 2 == 0 ? 'left' : 'right';
         <p class="product-description"><?= $product['description'] ?></p>
         <div class="product-tools">
             <span class="product-price"><?= $product['price'] ?>&euro;</span>
-            <a href="" class="btn btn-primary add-to-cart">Buy now</a>
+            <a href="/layouts/product.php?product_id=<?= $product['id'] ?>" class="btn btn-primary add-to-cart">Buy now</a>
         </div>
     </div>
 </div>

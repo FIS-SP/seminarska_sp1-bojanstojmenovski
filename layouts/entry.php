@@ -8,6 +8,7 @@ $isEntryPage = true;
 <?
 $showcasedProducts = [
     [
+        'id' => 2,
         'name' => 'Black Tee',
         'price' => 12,
         'description' => 'Poshlost black tee Spring Season 2021',
@@ -17,6 +18,7 @@ $showcasedProducts = [
         'after' => "/files/random2.png"
     ],
     [
+        'id' => 3,
         'name' => 'White Tee',
         'description' => 'Poshlost white tee Spring Season 2021',
         'price' => 12,
