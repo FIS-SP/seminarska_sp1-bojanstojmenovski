@@ -68,7 +68,7 @@
       align-items: center;
       gap: 1rem;
 
-      button.action {
+      .action {
         height: 50px;
         width: 50px;
         background: transparent;
@@ -81,14 +81,14 @@
         align-items: center;
       }
 
-      button.add-to-favorites {
+      .add-to-favorites {
         &:hover {
           color: $orange;
           border-color: $orange;
         }
       }
 
-      button.add-to-cart {
+      .add-to-cart {
         &:hover {
           color: $green;
           border-color: $green;

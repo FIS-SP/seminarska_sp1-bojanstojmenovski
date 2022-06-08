@@ -1,6 +1,10 @@
 body {
     font-size: 16px;
     font-family: "Helvetica", sans-serif;
+    background: $white;
+}
+
+.container {
 }
 
 a {
@@ -34,8 +38,8 @@ a {
 .btn {
     font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1.5;
-    padding: 0.5rem 2rem;
+    line-height: 1;
+    padding: 0.75rem 2rem;
     border-radius: 50px;
     border: 1px solid;
 }
@@ -48,5 +52,38 @@ a {
         background: $white;
         color: $primary-color;
         border-color: $primary-color;
+    }
+}
+
+.qty-input {
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid $gray300;
+
+    .qty-count {
+        font-size: 0.875rem;
+        line-height: 1;
+        font-weight: 600;
+        color: $primary-color;
+        background: transparent;
+        border: none;
+        padding: 0.75rem 1rem;
+    }
+
+    .product-qty {
+        font-size: 1rem;
+        line-height: 1;
+        width: 50px;
+        min-width: 0;
+        display: inline-block;
+        text-align: center;
+        appearance: textfield;
+        border: none;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            appearance: none;
+            margin: 0;
+        }
     }
 }

@@ -7,5 +7,5 @@
                 frameborder="0">
         </iframe>
     </div>
-    <a href="/" class="cta bracket-cta">Shop now</a>
+    <a href="/layouts/store.php" class="cta bracket-cta">Shop now</a>
 </section>

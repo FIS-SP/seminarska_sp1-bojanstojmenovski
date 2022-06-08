@@ -3,33 +3,35 @@ $isEntry = false;
 include "../inc/inc.header.php";
 ?>
     <div class="store-layout">
-        <div class="container row m-0">
-            <div class="main-title col-12">
-                <h2>Poshlost Shop</h2>
-            </div>
-
-            <div class="store-filter-container col-lg-3">
-                <div class="store-filter">
-
+        <div class="container">
+            <div class="row m-0">
+                <div class="main-title col-12">
+                    <h2>Poshlost Shop</h2>
                 </div>
-            </div>
 
-            <div class="store-products-container col-lg-9">
-                <?
-                include __DIR__ . "/../inc/dummy-data.php";
+                <div class="store-filter-container col-lg-3">
+                    <div class="store-filter">
 
-                if ($products) {
-                    ?>
-                    <div class="store-products-list">
-                        <?
-                        foreach ($products as $product) {
-                            include __DIR__ . "/../components/product-card.php";
-                        }
-                        ?>
                     </div>
+                </div>
+
+                <div class="store-products-container col-lg-9">
                     <?
-                }
-                ?>
+                    include __DIR__ . "/../inc/dummy-data.php";
+
+                    if ($products) {
+                        ?>
+                        <div class="store-products-list">
+                            <?
+                            foreach ($products as $product) {
+                                include __DIR__ . "/../components/product-card.php";
+                            }
+                            ?>
+                        </div>
+                        <?
+                    }
+                    ?>
+                </div>
             </div>
         </div>
     </div>
