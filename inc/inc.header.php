@@ -13,9 +13,9 @@
     <!-- AOS Animations   -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- My CSS -->
-    <link href="../scss/index.css" rel="stylesheet">
+    <link href="/scss/index.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/plugins/fontawesome-pro-6.1.1-web/css/all.min.css"">
+    <link rel="stylesheet" href="/plugins/fontawesome-pro-6.1.1-web/css/all.min.css">
 
 </head>
 <body>
