@@ -26,10 +26,14 @@
             <span class="product-price"><?= $product['price'] ?>&euro;</span>
         </div>
 
-        <div class="actions-status">
-            <!--            <i class="fa-solid fa-heart favorites-added"></i>-->
-            <!--            <i class="fa-solid fa-cart-circle-check cart-added"></i>-->
-        </div>
+        <div class="actions-mobile">
+            <a href="" class="add-to-favorites">
+                <i class="fa-light fa-heart"></i>
+            </a>
 
+            <a href="/layouts/product.php?product_id=<?= $product['id'] ?>" class="add-to-cart action">
+                <i class="fa-light fa-cart-shopping"></i>
+            </a>
+        </div>
     </div>
 </div>

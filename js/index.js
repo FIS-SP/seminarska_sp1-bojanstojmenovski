@@ -2,6 +2,7 @@ $(document).ready(function () {
     AOS.init();
     handleHeader();
     handleSliders();
+    hangleNavToggler();
 });
 
 function handleHeader() {
@@ -33,7 +34,23 @@ function handleSliders() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
+        autoplaySpeed: 3000,
         arrows: false,
         infinite: true,
+        responsive: [
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
       });
+}
+
+function hangleNavToggler() {
+    $("#nav-toggler").click(function () {
+        $(this).toggleClass("open");
+       $(".navbar").toggleClass("open");
+    });
 }

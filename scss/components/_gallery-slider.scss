@@ -1,21 +1,32 @@
 .gallery-images {
-    margin: 5rem 0;
+    margin: 5rem 0 0;
+    @include mqMax(768) {
+        margin: 3rem 0 0;
+    }
 
     .gallery-slider {
         height: 30rem;
+        @include mq(550, 768) {
+            height: 20rem;
+        }
 
         .slick-list, .slick-track {
             height: 100% !important;
         }
 
         .slick-current {
-            width: 50vw !important;
+            @include mqMin(550) {
+                width: 50vw !important;
+            }
         }
 
         .slide-wrapper {
             transition: all 1s ease;
             position: relative;
             padding-right: 0.3rem;
+            @include mqMax(550) {
+                padding: 0;
+            }
 
             .slide {
                 overflow: hidden;
@@ -33,6 +44,10 @@
                     transition: filter .5s ease;
                     &:hover {
                         filter: grayscale(0%);
+                    }
+
+                    @include mqMax(550) {
+                        width: 100%;
                     }
                 }
             }

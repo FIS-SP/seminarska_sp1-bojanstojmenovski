@@ -7,5 +7,10 @@
                 frameborder="0">
         </iframe>
     </div>
+
+    <div class="img-responsive">
+        <img src="/files/poshlosta.png" alt="Poshlost">
+    </div>
+
     <a href="/layouts/store.php" class="cta bracket-cta">Shop now</a>
 </section>

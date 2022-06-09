@@ -1,5 +1,8 @@
 .product-layout {
   padding: 3rem 0;
+  @include mqMax(550) {
+    padding: 1.5rem;
+  }
 
   .layout-container {
     display: flex;
@@ -7,9 +10,14 @@
 
     .product-image {
       width: 50%;
+      height: max-content;
       overflow: hidden;
       border-radius: 0.5rem;
       box-shadow: $box-shadow;
+      @include mqMax(767) {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
 
       img {
         width: 100%;
@@ -20,6 +28,10 @@
     .product-content {
       width: 50%;
       padding-left: 2rem;
+      @include mqMax(767) {
+        padding: 0;
+        width: 100%;
+      }
 
       .content-head {
         display: flex;
@@ -47,6 +59,7 @@
             padding: 0.25rem 0.5rem;
             text-transform: uppercase;
             height: 1.25rem;
+            width: max-content;
           }
         }
       }

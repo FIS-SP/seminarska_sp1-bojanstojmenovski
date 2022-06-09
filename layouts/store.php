@@ -9,13 +9,11 @@ include "../inc/inc.header.php";
                     <h2>Poshlost Shop</h2>
                 </div>
 
-                <div class="store-filter-container col-lg-3">
-                    <div class="store-filter">
+                <!--<div class="store-filter-container col-lg-3">-->
+                    <!--<div class="store-filter"></div>-->
+                <!--</div>-->
 
-                    </div>
-                </div>
-
-                <div class="store-products-container col-lg-9">
+                <div class="store-products-container col-12">
                     <?
                     include __DIR__ . "/../inc/dummy-data.php";
 

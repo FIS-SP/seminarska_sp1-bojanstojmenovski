@@ -1,10 +1,23 @@
 .product-card {
-  width: 33%;
+  width: 25%;
   border-radius: 0.5rem;
   background: $white;
   position: relative;
   z-index: 1;
   padding: 1rem;
+  @include mqMax(1200) {
+    width: 33%;
+  }
+  @include mqMax(991) {
+    width: 50%;
+  }
+  @include mqMax(768) {
+    box-shadow: $box-shadow;
+  }
+  @include mqMax(500) {
+    width: 100%;
+  }
+
   &:hover {
     z-index: 10;
     box-shadow: $box-shadow;
@@ -53,8 +66,6 @@
       img {
         width: 100%;
         object-fit: contain;
-        position: relative;
-        z-index: 1;
       }
     }
 
@@ -79,6 +90,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include mqMax(768) {
+          display: none;
+        }
       }
 
       .add-to-favorites {
@@ -117,21 +131,32 @@
       }
     }
 
-    .actions-status {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    .actions-mobile {
+      display: none;
+      @include mqMax(768) {
+        display: block;
+      }
 
-      i {
+      .add-to-favorites {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 2;
         font-size: 1.25rem;
+        color: $red-700;
       }
 
-      .favorites-added {
-        color: $orange;
-      }
-
-      .cart-added {
-        color: $green;
+      .add-to-cart {
+        height: 50px;
+        width: 50px;
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        border-radius: 50%;
+        color: $white;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }

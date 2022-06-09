@@ -5,6 +5,10 @@ body {
 }
 
 .container {
+    @include mqMax(550) {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 }
 
 a {

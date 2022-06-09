@@ -1,10 +1,16 @@
 .store-layout {
   padding: 3rem 0;
+  @include mqMax(550) {
+    padding: 1.5rem;
+  }
 
   .store-products-container {
     .store-products-list {
       display: flex;
       flex-wrap: wrap;
+      @include mqMax(768) {
+        gap: 1.5rem;
+      }
     }
   }
 }
